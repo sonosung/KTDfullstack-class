@@ -15,6 +15,7 @@ public class MemberAuth extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	MemberDAO dao;
 	
+	@Override
 	public void init() throws ServletException {
 		ServletContext application = this.getServletContext();
 		
@@ -26,6 +27,7 @@ public class MemberAuth extends HttpServlet {
 		dao = new MemberDAO(driver, connectUrl, oId, oPass);
 	}
 	
+	@Override
 	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		String admin_id = this.getInitParameter("admin_id");
 		

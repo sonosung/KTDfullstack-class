@@ -33,13 +33,13 @@ public class LifeCycle extends HttpServlet  {
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		System.out.println("doGet() 호출");
-		req.getRequestDispatcher("/12SErvlet/LifeCycle.jsp").forward(req, resp);
+		req.getRequestDispatcher("/12Servlet/LifeCycle.jsp").forward(req, resp);
 	}
 	
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		System.out.println("doPost() 호출");
-		req.getRequestDispatcher("/12SErvlet/LifeCycle.jsp").forward(req, resp);
+		req.getRequestDispatcher("/12Servlet/LifeCycle.jsp").forward(req, resp);
 	}
 	
 	@Override

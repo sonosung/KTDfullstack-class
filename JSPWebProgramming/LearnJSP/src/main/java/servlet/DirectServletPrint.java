@@ -14,7 +14,7 @@ public class DirectServletPrint extends HttpServlet {
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		resp.setContentType("text/html;charset=UTF-8");
+		resp.setContentType("text/html;charset=UTF-8"); //html 파일일 경우, text/html. 다른 파일이면, 그에 맞게 바꿔줘야함.
 		PrintWriter writer = resp.getWriter();
 		
 		writer.println("<html>");

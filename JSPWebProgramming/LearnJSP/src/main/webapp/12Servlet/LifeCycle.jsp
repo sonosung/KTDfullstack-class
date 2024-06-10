@@ -9,7 +9,7 @@
 <body>
 	<script>
 	function requestAction(frm, met) {
-		if (met ==1) {
+		if (met == 1) {
 			frm.method = 'get';
 		} else {
 			frm.method = 'post';

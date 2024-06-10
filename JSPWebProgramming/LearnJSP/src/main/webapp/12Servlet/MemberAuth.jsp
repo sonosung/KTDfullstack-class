@@ -13,7 +13,8 @@
 		<br />
 		<a href="./MemberAuth.mvc?id=nakja&pass=1234">회원인증(관리자)</a>
 		&nbsp;&nbsp;
-		<a href="./MemberAuth.mvc?id=musthave&pass=1234">회원인증(회원)</a>
+		<!-- DB member 테이블에 있는 id 와 pass 동일한 회원만 인증 가능. -->
+		<a href="./MemberAuth.mvc?id=test1&pass=1111">회원인증(회원)</a>
 		&nbsp;&nbsp;
 		<a href="./MemberAuth.mvc?id=stranger&pass=1234">회원인증(비회원)</a>
 	</p>
